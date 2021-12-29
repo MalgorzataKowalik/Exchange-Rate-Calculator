@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 2vh 0;
+  color: #135466;
+  text-align: center;
+}
+
+p.main-description {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.calculator {
+  width: 400px;
+}
+
+.calculator section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calculator select {
+  padding: 7px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+}
+
+.calculator input {
+  border: none;
+  background-color: transparent;
+  font-size: 26px;
+  text-align: right;
+}
+
+.calculator select:focus, .calculator input:focus, button {
+  outline: none;
+}
+
+.calculator section.rate {
+  margin: 4vh auto;
+}
+.rate button {
+  cursor: pointer;
+  width: 76px;
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  background-color: #3ababa;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.rate button:hover {
+  background-color: #34a7a7;
+}
+
+.rate p {
+  color: #3ababa;
+  margin-right: 15px;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  width: 80vw;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  color: #3ababa;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: #135466;
+}
+
+@media (max-width: 600px) {
+  #logo-img {
+    width: 250px;
+    height: auto;
+  }
+
+  .calculator {
+    width: 250px;
+  }
+
+  .calculator input {
+    max-width: 170px;
+  }
+
+  .rate p {
+    margin-right: 0;
+  }
+}
